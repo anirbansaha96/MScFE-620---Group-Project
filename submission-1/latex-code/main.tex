@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{color,soul}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{setspace}
+
+% following package makes url's in references look nicer
+\usepackage{url}
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+\onehalfspacing
+\addbibresource{references.bib}
+\title{History of Measure-Theoretic Probability and Martingales \\ MScFE 620 Group Project Submission 1}
+
+\date{\today}
+
+\author{
+  Avhad, Prajakta\\
+  \texttt{prajakta.s.avhad@gmail.com}
+  \and
+  Hugo, Pepar Thomas Jay\\
+  \texttt{peparhugo@gmail.com}
+  \and
+  Lin, Hong\\
+  \texttt{plantvsbird@gmail.com}
+  \and
+  Ramsay, Ben\\
+  \texttt{ramsay.ben@gmail.com}
+  \and
+  Wang, Jiao Yu\\
+  \texttt{joseph\_wang@live.ie}
+}
+
+
+\begin{document}
+\maketitle  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  TO HERE  %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\section{Kolmogorov and axioms of probability}
+
+\section{Markov and Markov processes}
+
+\section{J. L. Doob and the development of martingales}
+\subsection{Introduction}
+Doob's first paper in probability was Probability and Statistics. The paper inherited Kolmogoroff's method, using tools of mathematical formulations and more specifically the measure theory to describe and build the theory of probability, and to provide a mathematical basis for study of statistics. In paper, he showed the last point by proving validity of maximum likelihood, one of the classic statistics method.
+
+In the same year, Doob's another paper Stochastic Processes and Statistics builds on top of Khintchine's investigation of stochastic process. He developed two theorems of stochastic process which can also be used to prove the validity of the method of maximum likelihood.
+
+Later, in Probability as Measure, Doob made it clear that he regards the probability theory as a branch of measure theory, with clear, defined, and mathematical methods, a study which is separate from actual experiments. He also hopes that with a strong mathematical foundation, his work can be applied to all seemingly simple problems and be useful for all statisticians. 
+
+
+stochastic processes
+Martingales
+
+\subsection{Work Cited}
+Joseph L Doob and Development of Probability Theory https://www.ias.ac.in/article/fulltext/reso/020/04/0286-0288
+
+
+J. L. Doob. “Probability and Statistics.” Transactions of the American Mathematical Society, vol. 36, no. 4, Oct. 1934, pp. 759–775. EBSCOhost, doi:10.2307/1989822.
+
+Doob, J. L. “Probability as Measure.” The Annals of Mathematical Statistics, vol. 12, no. 2, 1941, pp. 206–214. JSTOR, www.jstor.org/stable/2235768. Accessed 26 Nov. 2020.}
+
+\section{Conclusion}
+
+
+
+
+% uncomment below if including references. References should be present in file titled referenced.bib
+%\bibliographystyle{agsm}
+%\bibliography{references}
+
+
+\end{document}
