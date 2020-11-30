@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  28 NOV 2020 02:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  28 NOV 2020 03:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -391,12 +391,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 42.
 
-Overfull \hbox (15.94093pt too wide) in paragraph at lines 67--68
-\OT1/cmr/m/n/10 Joseph L Doob and De-vel-op-ment of Prob-a-bil-ity The-ory https://www.ias.ac.in/article/fulltext/reso/020/04/0286-
+Overfull \hbox (143.08005pt too wide) in paragraph at lines 67--69
+[]\OT1/cmr/m/n/10 JW[] [][][]to[] [][][]do:[] [][][]put[] [][][]this[] [][][]in[] [][][].bib[] [][][]file. Joseph L Doob and De-vel-op-ment of Prob-a-bil-ity The-ory https://www.ias.ac.in/article/fulltext/reso/020/04/0286-
  []
 
-/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex:72: Too many }'s.
-l.72 ...rg/stable/2235768. Accessed 26 Nov. 2020.}
+/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex:73: Too many }'s.
+l.73 ...rg/stable/2235768. Accessed 26 Nov. 2020.}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -419,13 +419,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  8817 strings out of 481585
  162817 string characters out of 5919461
- 795708 words of memory out of 5000000
+ 796708 words of memory out of 5000000
  24631 multiletter control sequences out of 15000+600000
  536767 words of font info for 39 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  35i,7n,34p,944b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" (2 pages, 71849 bytes).
+Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" (2 pages, 72464 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

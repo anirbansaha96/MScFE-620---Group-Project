@@ -2,11 +2,11 @@
 ["biber main"] 0 "main.bcf" "main.bbl" "main" 0
   "main.bcf" 0 -1 0 "pdflatex"
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1606532381 "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex" "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" "main" 1606532381
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.aux" 1606532381 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex" 1606532380 3098 a09927276c7b5b4a14cf7edafee5db39 ""
+  "main.bbl"
+["pdflatex"] 1606532565 "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex" "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" "main" 1606532565
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.aux" 1606532565 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex" 1606532563 3136 42f5c98a8ee0d83232a608573563878e ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -66,12 +66,12 @@
   "main.aux" 0 -1 0 "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
   "main.run.xml" 0 -1 0 "pdflatex"
-  "main.tex" 1606532380 3098 a09927276c7b5b4a14cf7edafee5db39 ""
+  "main.tex" 1606532563 3136 42f5c98a8ee0d83232a608573563878e ""
   (generated)
-  "main.pdf"
   "main.aux"
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf"
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.log"
-  "main.run.xml"
   "main.bcf"
   "main.log"
+  "main.run.xml"
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf"
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.log"
+  "main.pdf"
