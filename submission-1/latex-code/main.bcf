@@ -2183,6 +2183,24 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Meyers2020</bcf:citekey>
+    <bcf:citekey order="2">Meyers2020</bcf:citekey>
+    <bcf:citekey order="3">Taylor2019</bcf:citekey>
+    <bcf:citekey order="4">Taylor2019</bcf:citekey>
+    <bcf:citekey order="5">Glen2020</bcf:citekey>
+    <bcf:citekey order="6">OConnor2006</bcf:citekey>
+    <bcf:citekey order="7">Debnath2015</bcf:citekey>
+    <bcf:citekey order="8">Eberle2015</bcf:citekey>
+    <bcf:citekey order="9">Daruich2014</bcf:citekey>
+    <bcf:citekey order="10">Athreya2015</bcf:citekey>
+    <bcf:citekey order="10">Doob1934</bcf:citekey>
+    <bcf:citekey order="11">Doob1934a</bcf:citekey>
+    <bcf:citekey order="12">Doob1941</bcf:citekey>
+    <bcf:citekey order="13">Doob1941</bcf:citekey>
+    <bcf:citekey order="14">Doob1971</bcf:citekey>
+    <bcf:citekey order="15">Doob1953</bcf:citekey>
+    <bcf:citekey order="16">Doob1953</bcf:citekey>
+    <bcf:citekey order="16">Doob1971</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
@@ -2214,4 +2232,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nyt/global//global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

@@ -1,0 +1,397 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Athreya2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a1de8acc3e972c667653e03958906df4}{%
+           family={Athreya},
+           familyi={A\bibinitperiod},
+           given={K.\bibnamedelimi B.},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1de8acc3e972c667653e03958906df4}
+      \strng{fullhash}{a1de8acc3e972c667653e03958906df4}
+      \strng{bibnamehash}{a1de8acc3e972c667653e03958906df4}
+      \strng{authorbibnamehash}{a1de8acc3e972c667653e03958906df4}
+      \strng{authornamehash}{a1de8acc3e972c667653e03958906df4}
+      \strng{authorfullhash}{a1de8acc3e972c667653e03958906df4}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Resonance}
+      \field{title}{Joseph L Doob and development of probability theory}
+      \field{volume}{20}
+      \field{year}{2015}
+      \field{pages}{286\bibrangedash 288}
+      \range{pages}{3}
+    \endentry
+    \entry{Daruich2014}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c1e3b9d1e172d7aaffeeb334c4c308d6}{%
+           family={Daruich},
+           familyi={D\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \strng{fullhash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \strng{bibnamehash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \strng{authorbibnamehash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \strng{authornamehash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \strng{authorfullhash}{c1e3b9d1e172d7aaffeeb334c4c308d6}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://ddaruich.weebly.com/uploads/3/8/1/2/38127151/measure_theory_notes.pdf}}
+      \field{note}{Accessed: 29th November 2020}
+      \field{title}{Notes on Measure Theory and Markov Processes.}
+      \field{year}{2014}
+    \endentry
+    \entry{Debnath2015}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b614008144b2c221289c8521087780f6}{%
+           family={Debnath},
+           familyi={D\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa014721ae2d84e5fe65d2197e657d65}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \strng{fullhash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \strng{bibnamehash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \strng{authorbibnamehash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \strng{authornamehash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \strng{authorfullhash}{b4d2fa5065f57e6c73644877b966c5e4}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Mathematical Education in Science and Technology}
+      \field{title}{A short history of probability theory and its applications}
+      \field{volume}{46}
+      \field{year}{2015}
+      \field{pages}{13\bibrangedash 39}
+      \range{pages}{27}
+    \endentry
+    \entry{Doob1934}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f7ca538b74cc0f274fecc6b1699907}{%
+           family={Doob},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{fullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{bibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorbibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authornamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorfullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trans. Amer. Math. Soc.}
+      \field{title}{Probability and statistics}
+      \field{volume}{36}
+      \field{year}{1934}
+      \field{pages}{759\bibrangedash 775}
+      \range{pages}{17}
+    \endentry
+    \entry{Doob1934a}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f7ca538b74cc0f274fecc6b1699907}{%
+           family={Doob},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{fullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{bibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorbibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authornamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorfullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{number}{6}
+      \field{title}{Stochastic Processes and Statistics}
+      \field{volume}{20}
+      \field{year}{1934}
+      \field{pages}{376\bibrangedash 379}
+      \range{pages}{4}
+    \endentry
+    \entry{Doob1941}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f7ca538b74cc0f274fecc6b1699907}{%
+           family={Doob},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{fullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{bibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorbibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authornamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorfullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \field{extraname}{3}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{number}{2}
+      \field{title}{Probability as a measure}
+      \field{volume}{12}
+      \field{year}{1941}
+      \field{pages}{206\bibrangedash 214}
+      \range{pages}{9}
+    \endentry
+    \entry{Doob1953}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f7ca538b74cc0f274fecc6b1699907}{%
+           family={Doob},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {New York, Wiley}%
+      }
+      \strng{namehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{fullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{bibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorbibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authornamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorfullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \field{extraname}{4}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stochastic Processes}
+      \field{year}{1953}
+    \endentry
+    \entry{Doob1971}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f7ca538b74cc0f274fecc6b1699907}{%
+           family={Doob},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{fullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{bibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorbibnamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authornamehash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \strng{authorfullhash}{b1f7ca538b74cc0f274fecc6b1699907}
+      \field{extraname}{5}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{5}
+      \field{title}{What is a Martingale?}
+      \field{volume}{78}
+      \field{year}{1971}
+      \field{pages}{451\bibrangedash 463}
+      \range{pages}{13}
+    \endentry
+    \entry{Eberle2015}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7efe27cf44019b31df4e2384268cb313}{%
+           family={Eberle},
+           familyi={E\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7efe27cf44019b31df4e2384268cb313}
+      \strng{fullhash}{7efe27cf44019b31df4e2384268cb313}
+      \strng{bibnamehash}{7efe27cf44019b31df4e2384268cb313}
+      \strng{authorbibnamehash}{7efe27cf44019b31df4e2384268cb313}
+      \strng{authornamehash}{7efe27cf44019b31df4e2384268cb313}
+      \strng{authorfullhash}{7efe27cf44019b31df4e2384268cb313}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://http://wt.iam.uni-bonn.de/fileadmin/WT/Inhalt/people/Andreas_Eberle/MarkovProcesses/MPSkript1415.pdf}}
+      \field{note}{Accessed: 29th November 2020}
+      \field{title}{Markov Processes.}
+      \field{year}{2015}
+    \endentry
+    \entry{Glen2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3fa24364cb2a055c31a4fb36dfda50d}{%
+           family={Glen},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \strng{fullhash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \strng{bibnamehash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \strng{authorbibnamehash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \strng{authornamehash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \strng{authorfullhash}{b3fa24364cb2a055c31a4fb36dfda50d}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 20th November 2020}
+      \field{title}{Axiomatic Probability: Definition, Kolmogorov’s Three Axioms - Statistics How To}
+      \field{year}{2020}
+    \endentry
+    \entry{Meyers2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7b4fb784b20710a53eec8acc4b00f66f}{%
+           family={Meyers},
+           familyi={M\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \strng{fullhash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \strng{bibnamehash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \strng{authorbibnamehash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \strng{authornamehash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \strng{authorfullhash}{7b4fb784b20710a53eec8acc4b00f66f}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pages.cs.wisc.edu/~dsmyers/cs547/lecture_6_probability.pdf}}
+      \field{note}{Accessed: 28 November 2020}
+      \field{title}{CS 547 Lecture 6: Axioms of Probability}
+      \field{year}{2020}
+    \endentry
+    \entry{OConnor2006}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0b2e614b681eed1504fdf8548db5e78a}{%
+           family={O'Connor},
+           familyi={O\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38d8d75893cbc96955e1d383533a42e3}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={E.\bibnamedelimi F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{62b358362fa3de4ac01ad294231353cf}
+      \strng{fullhash}{62b358362fa3de4ac01ad294231353cf}
+      \strng{bibnamehash}{62b358362fa3de4ac01ad294231353cf}
+      \strng{authorbibnamehash}{62b358362fa3de4ac01ad294231353cf}
+      \strng{authornamehash}{62b358362fa3de4ac01ad294231353cf}
+      \strng{authorfullhash}{62b358362fa3de4ac01ad294231353cf}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://mathshistory.st-andrews.ac.uk/Biographies/Markov/}}
+      \field{note}{Accessed: 29th November 2020}
+      \field{title}{Andrei Andreyevich Markov - Biography - Maths History, University of St Andrews, Scotland}
+      \field{year}{2006}
+    \endentry
+    \entry{Taylor2019}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c0336ed54af5be4d03c863b005eaa8e0}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \strng{fullhash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \strng{bibnamehash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \strng{authorbibnamehash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \strng{authornamehash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \strng{authorfullhash}{c0336ed54af5be4d03c863b005eaa8e0}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.thoughtco.com/what-are-probability-axioms-3126567}}
+      \field{note}{Accessed: 28th November 2020}
+      \field{title}{What Are Probability Axioms?}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  28 NOV 2020 03:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  30 NOV 2020 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,32 +293,111 @@ Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
  (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
+)) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+(/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen146
+)) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen147
+) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count369
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count370
+\leftroot@=\count371
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count372
+\DOTSCASE@=\count373
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count374
+\c@MaxMatrixCols=\count375
+\dotsspace@=\muskip21
+\c@parentequation=\count376
+\dspbrk@lvl=\count377
+\tag@help=\toks25
+\row@=\count378
+\column@=\count379
+\maxfields@=\count380
+\andhelp@=\toks26
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks27
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count381
+\csq@gtype=\count382
+\csq@glevel=\count383
+\csq@qlevel=\count384
+\csq@maxlvl=\count385
+\csq@tshold=\count386
+\csq@ltx@everypar=\toks29
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
 )
-\@quotelevel=\count369
-\@quotereset=\count370
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
  (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-18 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count371
-\l__pdf_internal_box=\box45
+\l__kernel_color_stack_int=\count387
+\l__pdf_internal_box=\box47
 ) (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -356,17 +435,17 @@ LaTeX Font Info:    ... okay on input line 41.
 
 (/home/joseph/bin/texlive2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count372
-\scratchdimen=\dimen146
-\scratchbox=\box46
-\nofMPsegments=\count373
-\nofMParguments=\count374
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count375
-\MPscratchDim=\dimen147
-\MPnumerator=\count376
-\makeMPintoPDFobject=\count377
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count388
+\scratchdimen=\dimen155
+\scratchbox=\box48
+\nofMPsegments=\count389
+\nofMParguments=\count390
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count391
+\MPscratchDim=\dimen156
+\MPnumerator=\count392
+\makeMPintoPDFobject=\count393
+\everyMPtoPDFconversion=\toks31
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -379,56 +458,117 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'main.bbl' found.
+ (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.bbl)
+Package biblatex Info: Reference section=0 on input line 43.
+Package biblatex Info: Reference segment=0 on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+ (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 41.
-Package biblatex Info: Reference segment=0 on input line 41.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
-
-Overfull \hbox (143.08005pt too wide) in paragraph at lines 67--69
-[]\OT1/cmr/m/n/10 JW[] [][][]to[] [][][]do:[] [][][]put[] [][][]this[] [][][]in[] [][][].bib[] [][][]file. Joseph L Doob and De-vel-op-ment of Prob-a-bil-ity The-ory https://www.ias.ac.in/article/fulltext/reso/020/04/0286-
  []
-
-/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.tex:73: Too many }'s.
-l.73 ...rg/stable/2235768. Accessed 26 Nov. 2020.}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
 
 [1
 
-{/home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.aux)
+{/home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
-LaTeX Warning: There were undefined references.
+ []
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[4] [5] [6] (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8817 strings out of 481585
- 162817 string characters out of 5919461
- 796708 words of memory out of 5000000
- 24631 multiletter control sequences out of 15000+600000
- 536767 words of font info for 39 fonts, out of 8000000 for 9000
+ 10763 strings out of 481585
+ 190351 string characters out of 5919461
+ 830568 words of memory out of 5000000
+ 26523 multiletter control sequences out of 15000+600000
+ 542461 words of font info for 64 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 35i,7n,34p,944b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" (2 pages, 72464 bytes).
+ 43i,8n,51p,1262b,1500s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/home/joseph/bin/texlive2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-1/latex-code/main.pdf" (6 pages, 196167 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

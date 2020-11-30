@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\author{peparhugo }
+\date{November 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Kolmogorov and his axioms of probability}
+The place to start with probability and measurement theory is with the definition of probability introduced by Andrey Kolmogrov in 1933. Kolmogrov proposed three axioms of probability that generalized probability beyond existing empirical definitions to a conceptual definition. Kolmogrov axioms depend upon what is referred to as a \textit{probability space} and it is defined as follows:
+
+\begin{enumerate}
+  \item $\Omega$ is the set of all possible events or outcomes in the sample space.
+  \item \textit{F} is the collection of sets of events or outcomes from the sample space.
+  \item P is the probability measure to assign the probability to a set of events or outcomes occurring from \textit{F} \cite{meyers}.
+\end{enumerate}
+
+A \textit{probability space} is then defined as ($\Omega$, \textit{F}, P). It can then be stated that event A is an element of \textit{F} where A is a sub-set of $\Omega$.
+
+From the \textit{probability space} Kolmogrov's Axioms of Probability set the baseline for mathematical probability and are as follows:
+
+\begin{enumerate}
+  \item 0 $\leq$ P(A) $\leq$ 1
+  \item P($\Omega$) = 1
+  \item P(A $\cup$ B) = P(A) + P(B), where A and B are mutually exclusive events \cite{meyers}.
+\end{enumerate}
+
+The first axiom states that the probability for any event A must a non-negative number between 0 and 1 inclusively. It represents the fractions of occurrence for event A which is an element of \textit{F}.
+
+The second axiom states that the probability of the sample space must be equal to 1. Another way to think of this is $\Omega$ contains all possible outcomes and the probability of any event happening from $\Omega$ is 1.
+
+The third axiom states that the probability of two mutually exclusive events A and B must be equal to the sum of the individual probability of A and B.
+
+By combing these three axioms one can deduce some interesting properties. First, it can be said the probability of any event occurring that does not exist in Ω is 0. If we know that P($\Omega$)=1 and P(A $\cup$ B) = P(A) + P(B), then P($\Omega$ $\cup$ $\Omega\textsuperscript{C}$) = P($\Omega$) + P($\Omega\textsuperscript{C}$) =  1+P($\Omega\textsuperscript{C}$) meaning P($\Omega\textsuperscript{C}$)=0. This means the probability of any event happening outside of the sample space Ω is 0. The compliment of Ω is referred to as the empty set \cite{taylor}.  
+The second interesting property is if A $\cup$ A$\textsuperscript{C}$ = $\Omega$ and P($\Omega$)=1, then P(A $\cup$ A$\textsuperscript{C}$) =  P(A) + P(A$\textsuperscript{C}$) = 1 meaning P(A$\textsuperscript{C}$) = 1 - P(A). This means the probability of the compliment of E occurring is 1 minus the probability of event E occurring \cite{taylor}.
+
+The Axioms of Probabilities Kolmogrov proposed apply to both classical probabilities and frequentist probabilities. It is also important to notice that these axioms are general statements about the features of a probability measure P but it does not give any details about the nature of the probability measure itself. This is where Kolmogrov separated the definition of probability from empirical study, where the nature of the probability measure is being studied, to a generalized formed where the nature of the probability measure is not needed. The axioms do not "tell us where and when to apply the rules, give us guidelines or procedures for calculating probabilities, nor any insights to the nature of random processes" \cite{glen}. Thus Kolmogrov's axioms generalized probability beyond the empirical study of events and now hypothetical probability spaces could be defined without understanding how the probability measure works and allowed theoretical research of probability spaces where the nature of the probability measure is not defined.
+
+\begin{thebibliography}{9}
+
+\bibitem{glen} 
+Glen, Stephanie. 
+“Axiomatic Probability: Definition, Kolmogorov’s Three Axioms.”
+Statistics How To, 8 June 2020,
+\\\texttt{www.statisticshowto.com/axiomatic-probability}.
+Accessed 28 Nov. 2020.
+
+\bibitem{meyers} 
+Meyers, Daniel. “CS 547 Lecture 6: Axioms of Probability.”
+\\\texttt{http://pages.cs.wisc.edu/~dsmyers/cs547/lecture_6_probability.pdf}.
+Accessed 28 Nov. 2020.
+
+\bibitem{taylor} 
+Taylor, Courtney. 
+“What Are Probability Axioms?” ThoughtCo, 15 Jan. 2019,
+\\\texttt{www.thoughtco.com/what-are-probability-axioms-3126567}.
+Accessed 28 Nov. 2020.
+
+\end{thebibliography}
+
+\end{document}

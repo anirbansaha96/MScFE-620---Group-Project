@@ -3,7 +3,9 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{color,soul}
 \usepackage[style=authoryear]{biblatex}
+\usepackage{amsmath,amssymb}
 \usepackage{setspace}
+\usepackage{csquotes}
 
 % following package makes url's in references look nicer
 \usepackage{url}
@@ -46,40 +48,113 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+The classical foundation of probability theory can be traced to the work by Abraham De Moivre and Jacob Bernoulli. This remained the canonical theory until the early twentieth century when it underwent an overhaul, along with mathematics in general at the time. This period saw a level of abstractness applied to classical caculus which gave birth to topics such as geometric probability, relative probability, Cournot’s principle, and Bertrand’s paradox. Andrei Kolmogorov, well known for his contributions to modern probability, estabilished its axiomatic basis in 1933. Kolmogorov enhanced classical probability by adding countable additivity to it. Later, individuals such as Markov and Doob made further contributions to the theory to give modern probability theory as we know it today. In this report, we will describe the developments of modern probability from the perspectives of these three figures. We will begin with Kolmogorov's work, describe contributions by Markov and end with the theory of Martingales as developed by Doob. 
 
 \section{Kolmogorov and axioms of probability}
+Modern probability theory has its roots in the definition of probability as introduced by Andrey Kolmogrov in 1933. Kolmogrov proposed three axioms of probability that generalized probability beyond existing empirical definitions to a conceptual definition. Kolmogrov axioms depend upon what is referred to as a \textit{probability space} and it is defined as follows:
 
+\begin{enumerate}
+  \item $\Omega$ is the set of all possible events or outcomes in the sample space.
+  \item \textit{F} is the collection of sets of events or outcomes from the sample space.
+  \item P is the probability measure to assign the probability to a set of events or outcomes occurring from \textit{F} \parencite{Meyers2020}.
+\end{enumerate}
+
+A \textit{probability space} is then defined as $(\Omega, \mathcal{F}, \mathbb{P})$. It can then be stated that event $A$ is an element of \textit{F} where $A$ is a sub-set of $\Omega$. \\
+
+From the \textit{probability space} Kolmogrov's Axioms of Probability set the baseline for mathematical probability and are as follows:
+
+\begin{enumerate}
+  \item $0 \leq \mathbb{P}(A) \leq 1$
+  \item $\mathbb{P}(\Omega) = 1$
+  \item $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B)$, where $A$ and $B$ are mutually exclusive events \parencite{Meyers2020}.
+\end{enumerate}
+
+The first axiom states that the probability for any event $A$ must a non-negative number between 0 and 1 inclusively. It represents the fractions of occurrence for event $A$ which is an element of $\mathcal{F}$. \\
+
+The second axiom states that the probability of the sample space must be equal to 1. Another way to think of this is $\Omega$ contains all possible outcomes and the probability of any event happening from $\Omega$ is 1. \\
+
+The third axiom states that the probability of two mutually exclusive events $A$ and $B$ must be equal to the sum of the individual probability of $A$ and $B$. \\
+
+By combing these three axioms one can deduce some interesting properties. First, it can be said the probability of any event occurring that does not exist in $\Omega$ is 0. If we know that $\mathbb{P}(\Omega)=1$ and $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B)$, then $\mathbb{P}(\Omega \cup \Omega^\complement) = \mathbb{P}(\Omega) + \mathbb{P}(\Omega^\complement) =  1+\mathbb{P}(\Omega^\complement)$ meaning $\mathbb{P}(\Omega\textsuperscript{C})=0$. This means the probability of any event happening outside of the sample space $\Omega$ is 0. The compliment of $\Omega$ is referred to as the empty set \parencite{Taylor2019}. \\ 
+
+The second interesting property is if $A \cup A^\complement = \Omega$ and $\mathbb{P}(\Omega)=1$, then $\mathbb{P}(A \cup A^\complement) =  \mathbb{P}(A) + \mathbb{P}(A^\complement) = 1$ meaning $\mathbb{P}(A^\complement) = 1 - \mathbb{P}(A)$. This means the probability of the compliment of $E$ occurring is 1 minus the probability of event $E$ occurring \parencite{Taylor2019}. \\
+
+The Axioms of Probabilities Kolmogrov proposed apply to both classical probabilities and frequentist probabilities. It is also important to notice that these axioms are general statements about the features of a probability measure $\mathbb{P}$ but it does not give any details about the nature of the probability measure itself. This is where Kolmogrov separated the definition of probability from empirical study, where the nature of the probability measure is being studied, to a generalized formed where the nature of the probability measure is not needed. The axioms do not ``tell us where and when to apply the rules, give us guidelines or procedures for calculating probabilities, nor any insights to the nature of random processes'' \parencite{Glen2020}. Thus Kolmogrov's axioms generalized probability beyond the empirical study of events and now hypothetical probability spaces could be defined without understanding how the probability measure works and allowed theoretical research of probability spaces where the nature of the probability measure is not defined.
 \section{Markov and Markov processes}
+Any historical discussion of Markov Processes must first focus on the Russian mathematician, Andrei Markov, after whom the concept was named. In his early years, Andrei had to persevere through poor health, only being able to walk with the assistance of crutches during his childhood. Despite his handicap, during his schooling he was able to demonstrate an innate talent for math, writing his first paper in secondary school on the integration of linear differential equations. Such precocious work got the attention of two professors at St. petersburg university where Markov would go on to gain his doctorate and teach as a professor working alongside Pafnuty Chebyshev \parencite{OConnor2006}.  \\
+
+During his time at the university, Markov studied sequences of mutually dependent variables which led him to the topic for which he is particularly remembered, Markov chains. His work in this area gave way to a novel branch of probability theory and preempted the theory of stochastic processes. Following Markov’s work in the area, Norbert Wiener would be the first to rigorously develop a continuous Markov process where Andrei Kolmogorov would go on to lay the foundations of Markov random processes as a theory. \\
+
+When markov processes are examined in discrete time, they may be referred to as markov chains \parencite{Debnath2015}. Markov chains are sequences of random variables where subsequent variables are determined by their immediate predecessor, but are independent of where the predecessor originated. In its simplest form, markov chains apply to a system where one of a number of states $\{S_1, S_2, ... , S_n\}$ can transition from one state to another. The probabilities associated with such a transition from $S_i$ to $S_j$ is an $n \times n$ matrix ($p_{ij}$) which is appropriately named the Markov transition matrix. The distinctive property where the following state depends on the current state can easily be seen in the transition matrix where any pair of states is associated with a specified probability. \\
+
+When generalized to measure-theoretic perspective, markov processes can be defined as follows \parencite{Eberle2015}. Given: 
+
+\begin{itemize}
+    \item A filtration on $(\Omega, \mathcal{F},\mathbb{P})$
+    \item State space $(S,\mathcal{B})$
+    \item A stochastic process $X_t$ that is adapted with respect to a filtration $\mathcal{F}_t$
+\end{itemize}
+
+Then the stochastic process $X_t$ on the state space is called a markov process if and only if
+
+\begin{align*}
+    \mathbb{P}[X_t\in\mathcal{B}|\mathcal{F}_s] & = \mathbb{P}[X_t\in\mathcal{B}|X_s], \hspace{10mm} \mathbb{P}-\mathrm{a.s.}\medspace \forall \mathcal{B}\in\mathbb{B} \medspace\mathrm{and}\medspace s,t\in I \medspace\mathrm{and}\medspace s\le t
+\end{align*}
+
+and given the above condition, it may be deduced that:
+
+\begin{align*}
+    & \mathbb{P}[X_t\in\mathcal{B}|\mathcal{F}_s] = \mathbb{P}[X_t\in\mathcal{B}|X_s], \hspace{10mm} &\mathbb{P}-\mathrm{a.s.}\medspace \forall \mathcal{B}\in\mathbb{B} \medspace\mathrm{and}\medspace s\le t \\
+    & E[f(X_t)|\mathcal{F}_s] = (p_{s,t}f)(X_s), \hspace{10mm} &\mathbb{P}-\mathrm{a.s.}\medspace\forall f\in m\mathcal{F}\medspace\mathrm{s.t.}\medspace f:S\rightarrow\mathbb{R}_+ \medspace\mathrm{and}\medspace s\le t
+\end{align*}
+
+Where $p_{s,t}$ is the transition probability from state $s$ to $t$ \parencite{Daruich2014}. \\
+
+It can be seen that Markov process dynamics are entirely described through its transition function. This provides extreme convenience as new probability measures need only be conditioned on the previous state. This is in stark contrast to a general case where a new measure would have to be used for each period depending on all previous states. \\
+
+Markov processes are a powerful concept and still remain an active area of research today. Common applications seen in the real-world may be found in various natural language processing applications, aspects of Google’s PageRank formula, and of particular relevance to this course, quantitative finance. 
 
 \section{J. L. Doob and the development of martingales}
-\subsection{Introduction}
-Doob's first paper in probability was Probability and Statistics. The paper inherited Kolmogoroff's method, using tools of mathematical formulations and more specifically the measure theory to describe and build the theory of probability, and to provide a mathematical basis for study of statistics. In paper, he showed the last point by proving validity of maximum likelihood, one of the classic statistics method.
+Joseph L. Doob's first paper in probability was titled ``Probability and Statistics'' \parencite{Athreya2015, Doob1934}. The paper inherited Kolmogoroff's method, and used the mathematical formulations of measure theory to describe and build the theory of probability, with the aim of providing a rigorous formulation for the study of statistics. In the paper, he achieved the last point by proving the validity of the maximum likelihood, which is frequently used in statistics today.  \\
 
-In the same year, Doob's another paper Stochastic Processes and Statistics builds on top of Khintchine's investigation of stochastic process. He developed two theorems of stochastic process which can also be used to prove the validity of the method of maximum likelihood.
+In the same year, Doob published another paper titled ``Stochastic Processes and Statistics'' which expanded upon Khintchine's results in the same topic \parencite{Doob1934a}. Two additional theorems were developed which could be used to provide an alternative proof of the maximum likelihood method. \\
 
-Later, in Probability as Measure, Doob made it clear that he regards the probability theory as a branch of measure theory, with clear, defined, and mathematical methods, a study which is separate from actual experiments. He also hopes that with a strong mathematical foundation, his work can be applied to all seemingly simple problems and be useful for all statisticians. 
+Later in ``Probability as a Measure,'' Doob made the observation that probability was simply a branch of measure theory. This was shown through a rigorous mathematical formulation and it was hoped that the results of this work could eventually serve as a foundation for all statistical problems \parencite{Doob1941}. 
 
+With this groundwork laid, Doob introduced his most important work and what he is known for today: Martingale theory \parencite{Doob1941}. The term martingale comes from a gambling practice where gamblers always bet the entire amount lost, so that each win will make the gambler even. In ``What is A Martingale'', \textcite{Doob1971} gives the following definition\footnote{which is substantially shorter in length compared to an earlier definition in his book ``Stochastic Processes'' \parencite{Doob1953}}: \\
 
-stochastic processes
-Martingales
+\textit{``With sample space $\Omega$, the expectation of a random variable $x$ can be defined as $E[x]=\Sigma_j x(\omega_j)p_j$, where $\omega_j \in \Omega$, $x(\omega_j)$ is the value of random variable $x$ with outcome $omega_j$, and $p_j$ refers to probability of the outcome.''} \\
 
-\subsection{Work Cited}
-\hl{JW to do: put this in .bib file.}
-Joseph L Doob and Development of Probability Theory https://www.ias.ac.in/article/fulltext/reso/020/04/0286-0288
+Without using the term "filtration" explicitly, Doob defines $\mathcal{F}_1 \subset \mathcal{F}_2 \subset ...$ as a finite or infinite increasing sequence of $\sigma$-algebras generated by partitions of $\Omega$. The sequence of $\{x_n, n \geq 1\}$ is called martingale relative to $\{\mathcal{F}_n, n \geq 1\}$ if
 
+\begin{equation*}
+	E\{x_n | \mathcal{F}_m\}= x_m
+\end{equation*}
 
-J. L. Doob. “Probability and Statistics.” Transactions of the American Mathematical Society, vol. 36, no. 4, Oct. 1934, pp. 759–775. EBSCOhost, doi:10.2307/1989822.
+for $m < n$, and each $x_n$ has an expectation. This simplistic definition can also be expanded to an uncountable sample space. \\
 
-Doob, J. L. “Probability as Measure.” The Annals of Mathematical Statistics, vol. 12, no. 2, 1941, pp. 206–214. JSTOR, www.jstor.org/stable/2235768. Accessed 26 Nov. 2020.}
+In a more concrete example, if we define $x_1$ as a gambler's fortune before they play a game, and $x_2$ as the fortune after the game, the game can be considered fair if
+
+\begin{equation*}
+	E\{x_2\} = x_1
+\end{equation*}
+
+and with more game played, if the fairness of the game still holds, we have
+
+\begin{equation*}
+	E\{x_{n+1} | x_1, ..., x_n\} = x_n, n=1,2,...
+\end{equation*}
+
+Doob then defines a mathematical model of fair game as a martingale:
+
+\begin{equation*}
+\{x_n, \mathcal{F}_n, n \geq 1 \}
+\end{equation*}
+
+relative to some stated Borel fields. Intuitively, the field $\mathcal{F}_n$ summarises all the influencing variables up to time $n$ at that point. As Doob explained in ``What is a Martingale'' and ``Stochastic Processes'' \parencite{Doob1953,Doob1971}, the concept of a martingale is useful because it formalises the concept of a game being "fair", meaning that a player can only ever learn more information as they play it. 
 
 \section{Conclusion}
-
-
-
-
-% uncomment below if including references. References should be present in file titled referenced.bib
-%\bibliographystyle{agsm}
-%\bibliography{references}
-
+In conclusion, this report describes the development in modern probability theory, with a strong focus on stochastic processes. The earliest groundwork was laid by Kolmogorov, beginning with his axioms. Later, Markov made contributions to the field through his work on random walks. This eventually paved the way for the theory of martingales which was formalised by Doob. The collective efforts of these giants now forms the foundation of modern probability and statistics, on top of which many new fields have spawned and flourished.
+\printbibliography
 
 \end{document}
