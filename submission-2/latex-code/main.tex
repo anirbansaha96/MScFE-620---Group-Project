@@ -49,13 +49,143 @@
 
 \section{Part A - Construction of Trinomial Tree}
 
-\hl{Pepar's code goes here.}
+\section{Introduction}
+
+This paper will construct a trinomial tree two time steps and one risky stock. Once the trinomial tree and probability measure are defined it will show the market is arbitrage free but the market is not complete. Final it will define the conditions and constraints that would make a trinomial tree market complete.
+
+\section{Define Trinomial Tree}
+
+The first step to constructing a trinoial tree is to define the set of possible outcomes in our tree. Since this is a trinomial tree with two time steps there will be 9 elements to $\Omega$. Omega will be:
+
+\begin{align*}
+  \Omega = \{ a, b, c, d, e, f, g, h, i \}
+\end{align*}
 
 
+Let us define the one risky stock with two time steps along with the probability measure:
+\begin{align*}
+    d=1 \\
+    T=2 \\
+\end{align*}
+\begin{align*}
+    \mathbb{P} & = 1/9(\delta_a + \delta_b + \delta_c +\delta_d + \delta_e + \delta_f + \delta_g + \delta_h + \delta_i \label{eq:pstar}) \\
+\end{align*}
 
+The transformation at each time step is as follows:
+
+\begin{equation}
+ X\textsubscript{n+1}=X\textsubscript{n}Z\textsubscript{n+1} \label{eq:x_transformation}
+\end{equation}
+\begin{equation}
+ X\textsubscript{0}=1
+\end{equation}
+
+Z$\textsubscript{n+1}$ is three random variables. There will be a set Z for each individual node in the tree at time step 1 and 2. This means at time step 1 there is one set of Z and time step 2 there are 3 sets of Z. The Z values will be selected so the value of the stock price increases, decreases and remains the same. For the purpose of this tree, negative stock values are allowed. The reason negative stocks prices are allowed is to allow for the trinomial tree to have at least EMM solution. The following Z will be used:
+
+\begin{align*}
+ Z\textsubscript{1}= \{ 2, 1, -2 \}
+\end{align*}
+
+\begin{align*}
+    Z_2 = \begin{cases}
+        \{ 3, 1, -3\}, \omega \medspace \epsilon \medspace \{ a, b, c \} \\
+        \{ 4, 1, -4\}, \omega \medspace \epsilon \medspace \{ d, e, f \} \\
+        \{ 5, 1, -5\}, \omega \medspace \epsilon \medspace \{ g, h, i \}
+    \end{cases}
+\end{align*}
+
+The values for each Z were selected so each branch of the tree has a different of transformation weights. Combining this will cases where negative stock prices occurs it will give enough freedom have infinitely many solutions to the system of equation in the second part of the paper.
+
+The trinomial tree has the following set and filtration:
+\begin{align*}
+    \mathbb{F} = 2^\Omega
+\end{align*}
+\begin{align*}
+    \mathcal{F}_0 &= \{\emptyset,\Omega\} \\
+    \mathcal{F}_1 &= \sigma(\{\{a,b,c\},\{d,e,f\},\{g,h,i\}\}) \\
+    \mathcal{F}_2 &= 2^\Omega
+\end{align*}
+
+This gives the following tabular trinomial tree:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$\omega$ & $X_0(w)$ & $X_1(w)$ & $X_2(w)$ \\
+\hline
+\hline
+$\alpha$ & 1 & 2 & 6 \\\hline
+$\beta$ & 1 & 2 & 2 \\\hline
+$\gamma$ & 1 & 2 & -6 \\\hline
+$\theta$ & 1 & 1 & 4 \\\hline
+$\rho$ & 1 & 1 & 1 \\\hline
+$\eta$ & 1 & 1 & -4 \\\hline
+$\psi$ & 1 & -2 & -10 \\\hline
+$\nu$ & 1 & -2 & -2 \\\hline
+$\lambda$ & 1 & -2 & 10 \\\hline
+\end{tabular}
+\end{center}
+
+The above conditions define a probability space with a propagated trinomial tree using equation \ref{eq:x_transformation} with the defined Z_ts.
 
 \section{Part B - Arbitrage-free conditions and market completness}
-For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. Assuming the completely general case where the asset price can move a different amount at each time step, we have $ud\neq du$ (commutativity property does not hold) and so $\Omega = \{uu,un,ud,nu,nn,nd,du,dn,dd\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where 
+
+\subsection{Solve the EMM for the Trinomial Tree in Part A}
+
+The condition of total probabilties gives the first equation in the system of equations to solve this trinomial tree.
+
+\begin{equation}
+    \alpha + \beta + \gamma + \theta + \rho + \eta + \psi + \nu + \lambda = 1 \label{eq:total-prob} \\
+\end{equation}
+
+The nest 4 equations come from the martingale conditional expected values:
+\begin{align}
+    6\alpha + 2\beta - 6\gamma + 4\theta + \rho - 4\eta - 10\psi - 2\nu + 10\lambda = 1 \label{eq:num-cond-1} \\
+    6\alpha + 2\beta - 6\gamma = 2(\alpha + \beta + \gamma) \implies \alpha = 2\gamma \label{eq:num-cond-2} \\
+    4\theta + \rho - 4\eta = \theta + \rho + \eta \implies \theta = 5/3\eta \label{eq:num-cond-3} \\
+    - 10\psi - 2\nu + 10\lambda = - 2(\psi + \nu + \lambda) \implies \psi = 4/3 \lambda \label{eq:num-cond-4}
+\end{align}
+
+The conditional expected value equations \ref{eq:num-cond-2}, \ref{eq:num-cond-3} and \ref{eq:num-cond-4} give an interesting property where they are independent of $\beta$, $\rho$ and $\nu$. This means the system of equations can have two extreme scenarios. One where the sum of $\beta$, $\rho$ and $\nu$ are equal to 1 or in other words all the other probabilities are 0. If we solve for this case, we get the following:
+\begin{align}
+    \beta + \rho + \nu = 1 \label{eq:total-prob-sub-1} \\
+    2\beta  + \rho - 2\nu = 1 \label{eq:num-cond-1-sub-1}
+\end{align}
+
+Subtracting \ref{eq:total-prob-sub-1} from  \ref{eq:num-cond-1-sub-1} gives:
+\begin{align}
+    \beta  + \rho - 3\nu = 0 \implies \beta = 3\nu \label{eq:num-cond-1-sub-1-beta}
+\end{align}
+
+Substituting \ref{eq:num-cond-1-sub-1-beta} back into \ref{eq:total-prob-sub-1} gives:
+\begin{align}
+    \beta  + \rho + 3\beta = 1 \implies \beta = \frac{1-\rho}{4} \label{eq:num-cond-1-sub-1-rho}
+\end{align}
+
+And finally \ref{eq:num-cond-1-sub-1-rho} into \ref{eq:num-cond-1-sub-1-beta} gives:
+\begin{align}
+    \nu = \frac{3-3\rho}{4} \label{eq:num-cond-1-sub-1-nu}
+\end{align}
+
+Using equation \ref{eq:total-prob-sub-1}, \ref{eq:num-cond-1-sub-1-rho} and \ref{eq:num-cond-1-sub-1-nu} we can define the following thresholds for $\beta$, $\rho$ and $\nu$:
+\begin{align*}
+    0 \leq \beta \leq \frac{3}{4} \\
+    0 \leq \rho \leq 1 \\
+    0 \leq \nu \leq \frac{1}{4}
+\end{align*}
+
+We have finally reached a point where we can say the trinomial tree from Part A is arbitrage free because $|\mathcal{P}|\neq0$ as dictated by FTAPI. This means that $\mathcal{P}$ is as follows:
+
+\begin{align*}
+    \mathcal{P} = \{ (0, \frac{1-\rho}{4}, 0, 0 , \rho, 0, 0, \frac{3-3\rho}{4}, 0), 0 \leq \rho \leq 1 \}
+\end{align*}
+
+There is also the other case where $\beta$, $\rho$ and $\nu$ are 0 meaning the sum of the remaining probabilities are equal to 1.
+
+\hl{The other case goes here that you typeset Joseph}
+
+\subsection{Additional Assumptions to Construct a Trinomial Tree that is a Complete Market}
+For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. Assuming the completely general case where the asset price can move a different amount at each time step, we have $ud\neq du$ (commutativity property does not hold) and so $\Omega = \{uu,un,ud,nu,nn,nd,du,dn,dd\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where
 \begin{align*}
     \mathcal{F}_0 &= \{\emptyset,\Omega\} \\
     \mathcal{F}_1 &= \sigma(\{\{uu,un,ud\},\{nu,nn,nd\},\{du,dn,dd\}\}) \\
@@ -69,7 +199,7 @@ We can define the evolution of the risky asset as:
     X_0 & = c\in\mathbb{R}^+\neq0
 \end{align*}
 
-with $Z_t,\medspace t:1\le t\le 2$ a sequence of random variable taking on three values: 
+with $Z_t,\medspace t:1\le t\le 2$ a sequence of random variable taking on three values:
 
 \begin{align*}
 Z_t(w) &= \begin{cases}
@@ -89,10 +219,10 @@ For the purpose of this assignment, we will assume that the coefficients of $\ma
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
-\hline 
+\hline
 $\omega$ & $Z_1(w)$ & $Z_2(w)$ & $X_0(w)$ & $X_1(w)$ & $X_2(w)$ \\
-\hline 
-\hline 
+\hline
+\hline
 $uu$ & $U_1$ & $U_2$ & $c$ & $cU_1$ & $cU_1U_2$ \\\hline
 $un$ & $U_1$ & $N_2$ & $c$ & $cU_1$ & $cU_1N_2$ \\\hline
 $ud$ & $U_1$ & $D_2$ & $c$ & $cU_1$ & $cU_1D_2$ \\\hline
@@ -105,7 +235,7 @@ $dd$ & $D_1$ & $D_2$ & $c$ & $cD_1$ & $cD_1D_2$ \\\hline
 \end{tabular}
 \end{center}
 
-At $t=1$, we can write the Martingale condition as follows: 
+At $t=1$, we can write the Martingale condition as follows:
 \begin{align}
     p_u\times cU_1 + p_d\times cD_1 + (1-p_u-p_d)\times cN_1 & = c \label{eq:martin-1} \\
     \implies p_uU_1 + p_dD_1 + (1-p_u-p_d)N_1 & = 1 \label{eq:martin-simplify-1}
@@ -124,7 +254,7 @@ assuming that $c\neq0$. At $t=2$, we can write three equations representing the 
     \implies p_uU_2 + p_dD_2 + (1-p_u-p_d)N_2 & = 1 \nonumber
 \end{align}
 
-assuming that $U_1,N_1,D_1\neq0$. Note that equations \ref{eq:martin-2}, \ref{eq:martin-3} and \ref{eq:martin-4} all simplify to \ref{eq:martin-simplify-2} and therefore equations \ref{eq:martin-simplify-1}, \ref{eq:martin-simplify-2} and $\{c,U_t,N_t,D_t\neq0\}$ are the constraints for our trinomial tree. 
+assuming that $U_1,N_1,D_1\neq0$. Note that equations \ref{eq:martin-2}, \ref{eq:martin-3} and \ref{eq:martin-4} all simplify to \ref{eq:martin-simplify-2} and therefore equations \ref{eq:martin-simplify-1}, \ref{eq:martin-simplify-2} and $\{c,U_t,N_t,D_t\neq0\}$ are the constraints for our trinomial tree.
 
 In order to determine the conditions for which this market is arbitrage-free / complete, we use the Fundamental Theorem of Asset Pricing (FTAP) 1 and 2. Therefore, we must determine an equivalent Martingale measure and to do this, we construct it arbitrarily as follows:
 
@@ -137,18 +267,18 @@ For \ref{eq:pstar} to be an EMM, it must satisfy two conditions: 1) it must be a
     \alpha + \beta + \gamma &= 1 \label{eq:pstar_cond_1} \\
     \alpha,\beta,\gamma>0 \nonumber
 \end{align}
-The second condition is satisfied when the following constraints are observed (see \ref{eq:martin-simplify-1} and \ref{eq:martin-simplify-2} except $\{p_u,p_d,1-p_u-p_d\}$ have been replaced by $\{\alpha,\beta,\gamma\}$): 
+The second condition is satisfied when the following constraints are observed (see \ref{eq:martin-simplify-1} and \ref{eq:martin-simplify-2} except $\{p_u,p_d,1-p_u-p_d\}$ have been replaced by $\{\alpha,\beta,\gamma\}$):
 \begin{align}
     \alpha U_1 + \beta D_1 + \gamma N_1 &= 1 \label{eq:pstar_cond_2} \\
     \alpha U_2 + \beta D_2 + \gamma N_2 &= 1 \label{eq:pstar_cond_3}
 \end{align}
-Then equations \ref{eq:pstar_cond_1}, \ref{eq:pstar_cond_2} and \ref{eq:pstar_cond_3} form a system of linear equations. 
+Then equations \ref{eq:pstar_cond_1}, \ref{eq:pstar_cond_2} and \ref{eq:pstar_cond_3} form a system of linear equations.
 \begin{align}
-    Ax &= b \nonumber\\ 
+    Ax &= b \nonumber\\
 \left[\begin{array}{cccc} \label{eq:pstar_cond_4}
 U_1 & D_1 & N_1\\
 U_2 & D_2 & N_2\\
-1 & 1 & 1 
+1 & 1 & 1
 \end{array} \right]
 \left[\begin{array}{c}
 \alpha\\
@@ -164,10 +294,10 @@ Recall that the FTAPI dictates that there are no arbitrage opportunities if and 
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
-\hline 
+\hline
 $\omega$ & $X_0(w)$ & $X_1(w)$ & $X_2(w)$ \\
-\hline 
-\hline 
+\hline
+\hline
 $uu$ & 1 & 2 & 6 \\\hline
 $uu$ & 1 & 2 & 2 \\\hline
 $uu$ & 1 & 2 & -6 \\\hline
@@ -180,11 +310,11 @@ $uu$ & 1 & -2 & 10 \\\hline
 \end{tabular}
 \end{center}
 and so equation \ref{eq:pstar_cond_4} becomes:
-\begin{align} 
+\begin{align}
 \left[\begin{array}{cccc}
 2 & -2 & 1\\
 2 & -2 & 1\\
-1 & 1 & 1 
+1 & 1 & 1
 \end{array} \right]
 \left[\begin{array}{c}
 \alpha\\
@@ -204,8 +334,8 @@ Z_t(w) &= \begin{cases}
     -2, \medspace \omega=d \\
 \end{cases}
 \end{align*}
-the probabilities become: 
-\begin{align} 
+the probabilities become:
+\begin{align}
 \left[\begin{array}{c}
 \alpha\\
 \beta\\
