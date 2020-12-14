@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{color,soul}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{csquotes}
+
+% following package makes url's in references look nicer
+\usepackage{url}
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+\onehalfspacing
+\addbibresource{references.bib}
+\title{Trinomial Trees \\ MScFE 620 Group Project Submission 2}
+
+\date{\today}
+
+\author{
+  Avhad, Prajakta\\
+  \texttt{prajakta.s.avhad@gmail.com}
+  \and
+  Hugo, Pepar Thomas Jay\\
+  \texttt{peparhugo@gmail.com}
+  \and
+  Lin, Hong\\
+  \texttt{plantvsbird@gmail.com}
+  \and
+  Ramsay, Ben\\
+  \texttt{ramsay.ben@gmail.com}
+  \and
+  Wang, Jiao Yu\\
+  \texttt{joseph\_wang@live.ie}
+}
+
+
+\begin{document}
+\maketitle  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  TO HERE  %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Part A - Construction of Trinomial Tree}
+
+\hl{Pepar's code goes here.}
+
+
+
+
+\section{Part B - Arbitrage-free conditions and market completness}
+For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. So $\Omega = \{u,n,d\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where 
+\begin{align*}
+    \mathcal{F}_0 &= \{\phi,\Omega\} \\
+    \mathcal{F}_1 &= \sigma(\{\{uu,un,ud\},\{nu,nn,nd\},\{du,dn,dd\}\}) \\
+    \mathcal{F}_2 &= 2^\Omega
+\end{align*}
+
+We can define the evolution of the risky asset as:
+
+\begin{align*}
+    X_{t+1} &= X_tZ_{t+1},\medspace t:0< t\le 2\\
+    X_0 & = c\in\mathbb{R}^+\neq0
+\end{align*}
+
+with $Z_t,\medspace t:1\le t\le 2$ a sequence of random variable taking on three values: 
+
+\begin{align*}
+Z_t(w) &= \begin{cases}
+    U_t, \medspace \omega=u \\
+    N_t, \medspace \omega=n \\
+    D_t, \medspace \omega=d \\
+\end{cases}
+\end{align*}
+
+In this case, $U_t$ denotes the magnitude of the stock price change at time $t$ and the corresponding definitions hold for $N_t$ and $D_t$. Note that the condition of order is imposed on the values of $Z_t$: $0<D_t<N_t<U_t\medspace$ for all $t$. Finally, the probability measure is defined below with the following constraints enforced (these arise from the definition of a probability measure): $0<p_u,p_d<1$ and $0<p_u+p_d<1$
+
+\begin{align*}
+    \mathbb{P} = p_u\delta_u + p_d\delta_d + (1-p_u-p_d)\delta_n
+\end{align*}
+
+For the purpose of this assignment, we will assume that the coefficients of $\mathbb{P}$ do not vary with time. Below is an enumeration of all possible values of $X_t$ from $0\let\le2$:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+$\omega$ & $Z_1(w)$ & $Z_2(w)$ & $X_0(w)$ & $X_1(w)$ & $X_2(w)$ \\
+\hline 
+\hline 
+$uu$ & $U_1$ & $U_2$ & $c$ & $cU_1$ & $cU_1U_2$ \\\hline
+$un$ & $U_1$ & $N_2$ & $c$ & $cU_1$ & $cU_1N_2$ \\\hline
+$ud$ & $U_1$ & $D_2$ & $c$ & $cU_1$ & $cU_1D_2$ \\\hline
+$nu$ & $N_1$ & $U_2$ & $c$ & $cN_1$ & $cN_1U_2$ \\\hline
+$nn$ & $N_1$ & $N_2$ & $c$ & $cN_1$ & $cN_1N_2$ \\\hline
+$nd$ & $N_1$ & $D_2$ & $c$ & $cN_1$ & $cN_1D_2$ \\\hline
+$du$ & $D_1$ & $U_2$ & $c$ & $cD_1$ & $cD_1U_2$ \\\hline
+$dn$ & $D_1$ & $N_2$ & $c$ & $cD_1$ & $cD_1N_2$ \\\hline
+$dd$ & $D_1$ & $D_2$ & $c$ & $cD_1$ & $cD_1D_2$ \\\hline
+\end{tabular}
+\end{center}
+
+At $t=1$, we can write the Martingale condition as follows: 
+\begin{align}
+    p_u\times cU_1 + p_d\times cD_1 + (1-p_u-p_d)\times cN_1 & = c \label{eq:martin-1} \\
+    \implies p_uU_1 + p_dD_1 + (1-p_u-p_d)N_1 & = 1 \label{eq:martin-simplify-1}
+\end{align}
+assuming that $c\neq0$. At $t=2$, we can write three equations representing the Martingale requirement:
+\begin{align}
+    p_u\times cU_1U_2 + p_d\times cU_1D_2 + (1-p_u-p_d)\times cU_1N_2 & = cU_1 \label{eq:martin-2} \\
+    \implies p_uU_2 + p_dD_2 + (1-p_u-p_d)N_2 & = 1 \label{eq:martin-simplify-2}
+\end{align}
+\begin{align}
+    p_u\times cN_1U_2 + p_d\times cN_1D_2 + (1-p_u-p_d)\times cN_1N_2 & = cN_1 \label{eq:martin-3} \\
+    \implies p_uU_2 + p_dD_2 + (1-p_u-p_d)N_2 & = 1 \nonumber
+\end{align}
+\begin{align}
+    p_u\times cD_1U_2 + p_d\times cD_1D_2 + (1-p_u-p_d)\times cD_1N_2 & = cN_1 \label{eq:martin-4} \\
+    \implies p_uU_2 + p_dD_2 + (1-p_u-p_d)N_2 & = 1 \nonumber
+\end{align}
+
+assuming that $U_1,N_1,D_1\neq0$. Note that equations \ref{eq:martin-2}, \ref{eq:martin-3} and \ref{eq:martin-4} all simplify to \ref{eq:martin-simplify-2} and therefore equations \ref{eq:martin-simplify-1}, \ref{eq:martin-simplify-2} and $\{c,U_t,N_t,D_t\neq0\}$ are the constraints for our trinomial tree. 
+
+In order to determine the conditions for which this market is arbitrage-free / complete, we use the Fundamental Theorem of Asset Pricing (FTAP) 1 and 2. Therefore, we must determine an equivalent Martingale measure and to do this, we construct it arbitrarily as follows:
+
+\begin{align}
+    \mathbb{P}^* & = \alpha\delta_u + \beta\delta_d + \gamma\delta_n \label{eq:pstar}
+\end{align}
+
+For \ref{eq:pstar} to be an EMM, it must satisfy two conditions: 1) it must be a probability measure and equivalent to $\mathbb{P}$ and 2) $X_t$ must be an $(\mathbb{F},\mathbb{P}^*)$-Martingale. The first condition is confirmed by recognising that both $\mathbb{P}$ and $\mathbb{P}^*$ have the same null set (the empty set $\phi$) as well as enforcing the following condition:
+\begin{align}
+    \alpha + \beta + \gamma &= 1 \label{eq:pstar_cond_1} \\
+    \alpha,\beta,\gamma>0 \nonumber
+\end{align}
+The second condition is satisfied when the following constraints are observed: 
+\begin{align}
+    \alpha U_1 + \beta D_1 + \gamma N_1 &= 1 \label{eq:pstar_cond_2} \\
+    \alpha U_2 + \beta D_2 + \gamma N_2 &= 1 \label{eq:pstar_cond_3}
+\end{align}
+Then equations 
+\end{document}
