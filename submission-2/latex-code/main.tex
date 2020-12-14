@@ -55,9 +55,9 @@
 
 
 \section{Part B - Arbitrage-free conditions and market completness}
-For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. So $\Omega = \{u,n,d\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where 
+For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. Assuming the completely general case where the asset price can move a different amount at each time step, we have $ud\neq du$ (commutativity property does not hold) and so $\Omega = \{uu,un,ud,nu,nn,nd,du,dn,dd\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where 
 \begin{align*}
-    \mathcal{F}_0 &= \{\phi,\Omega\} \\
+    \mathcal{F}_0 &= \{\emptyset,\Omega\} \\
     \mathcal{F}_1 &= \sigma(\{\{uu,un,ud\},\{nu,nn,nd\},\{du,dn,dd\}\}) \\
     \mathcal{F}_2 &= 2^\Omega
 \end{align*}
@@ -132,15 +132,77 @@ In order to determine the conditions for which this market is arbitrage-free / c
     \mathbb{P}^* & = \alpha\delta_u + \beta\delta_d + \gamma\delta_n \label{eq:pstar}
 \end{align}
 
-For \ref{eq:pstar} to be an EMM, it must satisfy two conditions: 1) it must be a probability measure and equivalent to $\mathbb{P}$ and 2) $X_t$ must be an $(\mathbb{F},\mathbb{P}^*)$-Martingale. The first condition is confirmed by recognising that both $\mathbb{P}$ and $\mathbb{P}^*$ have the same null set (the empty set $\phi$) as well as enforcing the following condition:
+For \ref{eq:pstar} to be an EMM, it must satisfy two conditions: 1) it must be a probability measure and equivalent to $\mathbb{P}$ and 2) $X_t$ must be an $(\mathbb{F},\mathbb{P}^*)$-Martingale. The first condition is confirmed by recognising that both $\mathbb{P}$ and $\mathbb{P}^*$ have the same null set (the empty set $\emptyset$) as well as enforcing the following condition:
 \begin{align}
     \alpha + \beta + \gamma &= 1 \label{eq:pstar_cond_1} \\
     \alpha,\beta,\gamma>0 \nonumber
 \end{align}
-The second condition is satisfied when the following constraints are observed: 
+The second condition is satisfied when the following constraints are observed (see \ref{eq:martin-simplify-1} and \ref{eq:martin-simplify-2} except $\{p_u,p_d,1-p_u-p_d\}$ have been replaced by $\{\alpha,\beta,\gamma\}$): 
 \begin{align}
     \alpha U_1 + \beta D_1 + \gamma N_1 &= 1 \label{eq:pstar_cond_2} \\
     \alpha U_2 + \beta D_2 + \gamma N_2 &= 1 \label{eq:pstar_cond_3}
 \end{align}
-Then equations 
+Then equations \ref{eq:pstar_cond_1}, \ref{eq:pstar_cond_2} and \ref{eq:pstar_cond_3} form a system of linear equations. 
+\begin{align}
+    Ax &= b \nonumber\\ 
+\left[\begin{array}{cccc} \label{eq:pstar_cond_4}
+U_1 & D_1 & N_1\\
+U_2 & D_2 & N_2\\
+1 & 1 & 1 
+\end{array} \right]
+\left[\begin{array}{c}
+\alpha\\
+\beta\\
+\gamma\\
+\end{array} \right] &= \left[\begin{array}{c}
+1\\
+1\\
+1
+\end{array} \right]
+\end{align}
+Recall that the FTAPI dictates that there are no arbitrage opportunities if and only if $|\mathcal{P}|\neq0$ and FTAPII states that the market is complete if and only if $|\mathcal{P}|=1$. This is equivalent to determining under which conditions \ref{eq:pstar_cond_4} has at least one solution and what conditions does it have only one solution. If $Z_t$ is time invariant i.e. $U_s=U_t$ for all $s,t$ (similar requirement for $D_t$ and $N_t$), we automatically have that the market is arbitrage free since the matrix $A$ contains two equivalent rows which results in an infinite number of solutions. This set of solutions will depend on a parameter (let's denote it $p$) and therefore to enforce market completeness, all that is needed is to select one value of $p$ within its allowable domain. Since symbolic calculations involving \ref{eq:pstar_cond_4} could become tedious, we have instead taken the numerical examples in part A to show an example of this. Recall that $X_t$ evolves according to the table below:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+$\omega$ & $X_0(w)$ & $X_1(w)$ & $X_2(w)$ \\
+\hline 
+\hline 
+$uu$ & 1 & 2 & 6 \\\hline
+$uu$ & 1 & 2 & 2 \\\hline
+$uu$ & 1 & 2 & -6 \\\hline
+$uu$ & 1 & 1 & 4 \\\hline
+$uu$ & 1 & 1 & 1 \\\hline
+$uu$ & 1 & 1 & -4 \\\hline
+$uu$ & 1 & -2 & -10 \\\hline
+$uu$ & 1 & -2 & -2 \\\hline
+$uu$ & 1 & -2 & 10 \\\hline
+\end{tabular}
+\end{center}
+and so equation \ref{eq:pstar_cond_4} becomes:
+\begin{align} 
+\left[\begin{array}{cccc}
+2 & -2 & 1\\
+2 & -2 & 1\\
+1 & 1 & 1 
+\end{array} \right]
+\left[\begin{array}{c}
+\alpha\\
+\beta\\
+\gamma\\
+\end{array} \right] &= \left[\begin{array}{c}
+1\\
+1\\
+1
+\end{array} \right]
+\end{align}
+assuming that:
+\begin{align*}
+Z_t(w) &= \begin{cases}
+    2, \medspace \omega=u \\
+    1, \medspace \omega=n \\
+    -2, \medspace \omega=d \\
+\end{cases}
+\end{align*}
+
 \end{document}
