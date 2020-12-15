@@ -96,9 +96,6 @@ INPUT /home/joseph/bin/texlive2020/texmf-dist/tex/context/base/mkii/supp-pdf.mki
 INPUT /home/joseph/bin/texlive2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /home/joseph/bin/texlive2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.bcf
-INPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.bbl
-INPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.bbl
-INPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.bbl
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -133,11 +130,14 @@ INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf
 INPUT /home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.aux
 INPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.run.xml
 OUTPUT /home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.run.xml
+INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

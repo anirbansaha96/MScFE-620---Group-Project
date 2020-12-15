@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  15 DEC 2020 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.23)  15 DEC 2020 00:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -458,37 +458,172 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.bbl)
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 43.
 Package biblatex Info: Reference segment=0 on input line 43.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
- (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
  (/home/joseph/bin/texlive2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
 
-{/home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.aux)
+LaTeX Warning: Reference `eq:EMM-cond-4' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `eq:EMM-cond-5' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `eq:EMM-cond-6' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `eq:EMM-cond-1' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `eq:EMM-cond-3' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `eq:EMM-cond-2' on page 1 undefined on input line 65.
+
+[1
+
+{/home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+
+LaTeX Warning: Reference `eq:x_transformation' on page 3 undefined on input line 164.
+
+/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex:164: Missing $ inserted.
+<inserted text> 
+                $
+l.164 ...{eq:x_transformation} with the defined Z_
+                                                  ts.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex:166: Missing $ inserted.
+<inserted text> 
+                $
+l.166 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[3]
+
+LaTeX Warning: Reference `eq:num-cond-2' on page 4 undefined on input line 185.
+
+
+LaTeX Warning: Reference `eq:num-cond-3' on page 4 undefined on input line 185.
+
+
+LaTeX Warning: Reference `eq:num-cond-4' on page 4 undefined on input line 185.
+
+
+LaTeX Warning: Reference `eq:total-prob-sub-1' on page 4 undefined on input line 191.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1' on page 4 undefined on input line 191.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1-beta' on page 4 undefined on input line 196.
+
+
+LaTeX Warning: Reference `eq:total-prob-sub-1' on page 4 undefined on input line 196.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1-rho' on page 4 undefined on input line 201.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1-beta' on page 4 undefined on input line 201.
+
+
+LaTeX Warning: Reference `eq:total-prob-sub-1' on page 4 undefined on input line 206.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1-rho' on page 4 undefined on input line 206.
+
+
+LaTeX Warning: Reference `eq:num-cond-1-sub-1-nu' on page 4 undefined on input line 206.
+
+[4] [5]
+
+LaTeX Warning: Reference `eq:martin-2' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:martin-3' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:martin-4' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:martin-simplify-2' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:martin-simplify-1' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:martin-simplify-2' on page 6 undefined on input line 293.
+
+
+LaTeX Warning: Reference `eq:pstar' on page 6 undefined on input line 301.
+
+[6]
+
+LaTeX Warning: Reference `eq:martin-simplify-1' on page 7 undefined on input line 306.
+
+
+LaTeX Warning: Reference `eq:martin-simplify-2' on page 7 undefined on input line 306.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_1' on page 7 undefined on input line 311.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_2' on page 7 undefined on input line 311.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_3' on page 7 undefined on input line 311.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_4' on page 7 undefined on input line 329.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_4' on page 7 undefined on input line 329.
+
+
+LaTeX Warning: Reference `eq:pstar_cond_4' on page 7 undefined on input line 348.
+
+[7] [8] (/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10508 strings out of 481585
- 185100 string characters out of 5919461
- 835918 words of memory out of 5000000
- 26275 multiletter control sequences out of 15000+600000
- 540068 words of font info for 55 fonts, out of 8000000 for 9000
+ 10520 strings out of 481585
+ 185077 string characters out of 5919461
+ 835746 words of memory out of 5000000
+ 26288 multiletter control sequences out of 15000+600000
+ 540683 words of font info for 57 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  35i,14n,34p,1211b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf" (5 pages, 137388 bytes).
+</home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/joseph/bin/texlive2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf" (8 pages, 159995 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
