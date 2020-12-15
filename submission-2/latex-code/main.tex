@@ -50,17 +50,13 @@
 \section{Part A - Construction of Trinomial Tree}
 \subsection{Introduction}
 
-This paper will construct a trinomial tree two time steps and one risky stock. Once the trinomial tree and probability measure are defined it will show the market is arbitrage free but the market is not complete. Final it will define the conditions and constraints that would make a trinomial tree market complete.
+This paper will construct a trinomial tree with two time steps and one risky stock. Once the trinomial tree and probability measure are defined it will show the market is arbitrage free but the market is not complete. Finally, it will define the conditions and constraints that would make a trinomial tree market complete.
 
 \subsection{Define Trinomial Tree}
-
 The first step to constructing a trinomial tree is to define the set of possible outcomes in our tree. Since this is a trinomial tree with two time steps there will be 9 elements to $\Omega$. Omega will be:
-
 \begin{align*}
   \Omega = \{ a, b, c, d, e, f, g, h, i \}
 \end{align*}
-
-
 Let us define the one risky stock with two time steps along with the probability measure:
 \begin{align*}
     d=1 \\
@@ -69,22 +65,17 @@ Let us define the one risky stock with two time steps along with the probability
 \begin{align*}
     \mathbb{P} & = 1/9(\delta_a + \delta_b + \delta_c +\delta_d + \delta_e + \delta_f + \delta_g + \delta_h + \delta_i \label{eq:pstar}) \\
 \end{align*}
-
 The transformation at each time step is as follows:
-
 \begin{equation}
  X\textsubscript{n+1}=X\textsubscript{n}Z\textsubscript{n+1} \label{eq:x_transformation}
 \end{equation}
 \begin{equation}
  X\textsubscript{0}=1
 \end{equation}
-
 Z$\textsubscript{n+1}$ is three random variables. There will be a set Z for each individual node in the tree at time step 1 and 2. This means at time step 1 there is one set of Z and time step 2 there are 3 sets of Z. The Z values will be selected so the value of the stock price increases, decreases and remains the same. For the purpose of this tree, negative stock values are allowed. The reason negative stocks prices are allowed is to allow for the trinomial tree to have at least EMM solution. The following Z will be used:
-
 \begin{align*}
  Z\textsubscript{1}= \{ 2, 1, -2 \}
 \end{align*}
-
 \begin{align*}
     Z_2 = \begin{cases}
         \{ 3, 1, -3\}, \omega \medspace \epsilon \medspace \{ a, b, c \} \\
@@ -92,10 +83,7 @@ Z$\textsubscript{n+1}$ is three random variables. There will be a set Z for each
         \{ 5, 1, -5\}, \omega \medspace \epsilon \medspace \{ g, h, i \}
     \end{cases}
 \end{align*}
-
-The values for each Z were selected so each branch of the tree has a different of transformation weights. Combining this will cases where negative stock prices occurs it will give enough freedom have infinitely many solutions to the system of equation in the second part of the paper.
-
-The trinomial tree has the following set and filtration:
+The values for each Z were selected so each branch of the tree has a different of transformation weights. Combining this will cases where negative stock prices occurs it will give enough freedom have infinitely many solutions to the system of equation in the second part of the paper. The trinomial tree has the following set and filtration:
 \begin{align*}
     \mathbb{F} = 2^\Omega
 \end{align*}
@@ -104,9 +92,7 @@ The trinomial tree has the following set and filtration:
     \mathcal{F}_1 &= \sigma(\{\{a,b,c\},\{d,e,f\},\{g,h,i\}\}) \\
     \mathcal{F}_2 &= 2^\Omega
 \end{align*}
-
 This gives the following tabular trinomial tree:
-
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -190,7 +176,7 @@ There is also the other case where $\beta$, $\rho$ and $\nu$ are 0 meaning the s
     \psi & = \frac{4}{3}\lambda \label{eq:EMM-cond-6}
 \end{align}
 
-Substituting \ref{eq:EMM-cond-4}, \ref{eq:EMM-cond-5}, \ref{eq:EMM-cond-6} into \ref{eq:EMM-cond-1}, \ref{eq:EMM-cond-3} and \ref{eq:EMM-cond-2} gives (\hl{Pepar, please check})
+Substituting \ref{eq:EMM-cond-4}, \ref{eq:EMM-cond-5}, \ref{eq:EMM-cond-6} into \ref{eq:EMM-cond-1}, \ref{eq:EMM-cond-3} and \ref{eq:EMM-cond-2} gives
 \begin{align*}
     3\gamma + \frac{8}{3}\eta + \frac{7}{3}\lambda & = 1 \\
     6\gamma + \frac{8}{3}\eta - \frac{14}{3}\lambda & = 1 \\
@@ -207,10 +193,8 @@ Then
 \end{align*}
 The set of equivalent Martingale measures is therefore:
 \begin{align*}
-    \mathcal{P} & =\left\{ \left(2\gamma,0,\gamma,\frac{5-20\gamma}{8},0,\frac{3-12\gamma}{8},\frac{4}{7}\gamma,0,\frac{3}{7}\gamma\right): 0\ge\gamma\ge\frac{1}{4}\right\}
+    \mathcal{P} & =\left\{ \left(2\gamma,0,\gamma,\frac{5-20\gamma}{8},0,\frac{3-12\gamma}{8},\frac{4}{7}\gamma,0,\frac{3}{7}\gamma\right): 0\le\gamma\le\frac{1}{4}\right\}
 \end{align*}
-
-\hl{I copied the condition for $\gamma$ from the notes but this is unphysical. Could you please double check this? }
 
 \subsection{Additional Assumptions to Construct a Trinomial Tree that is a Complete Market}
 For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. Assuming the completely general case where the asset price can move a different amount at each time step, we have $ud\neq du$ (commutativity property does not hold) and so $\Omega = \{uu,un,ud,nu,nn,nd,du,dn,dd\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where
@@ -395,9 +379,9 @@ Performing row reduction:
 0 & 0 & 0 & 0
 \end{array} \right]
 \end{align*}
-Therefore, we have $\alpha = \frac{3-2\beta}{4}$, $\beta$ free and $\gamma = \frac{1-\beta}{4}$. Additionally, we need to enforce the condition that $\alpha,\beta,\gamma>0$ which leads to the set of equivalent Martingale measures being:
+Therefore, we have $\alpha = \frac{3-3\beta}{4}$, $\beta$ free and $\gamma = \frac{1-\beta}{4}$. Additionally, we need to enforce the condition that $\alpha,\beta,\gamma>0$ which leads to the set of equivalent Martingale measures being:
 \begin{align*}
-    \mathcal{P} & =\left\{ \left(\frac{3-2\beta}{4},\beta,\frac{1-\beta}{4}\right): 0<\beta<1\right\}
+    \mathcal{P} & =\left\{ \left(\frac{3-3\beta}{4},\beta,\frac{1-\beta}{4}\right): 0<\beta<1\right\}
 \end{align*}
 Since $\mathcal{P}\neq\emptyset$, the market is arbitrage free. To enforce market completeness, fix $\beta$ to a value between 0 and 1 which will lead to $|\mathcal{P}| = 1$. $\square$
 \end{document}

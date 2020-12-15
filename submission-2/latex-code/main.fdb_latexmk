@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber main"] 1607993687 "main.bcf" "main.bbl" "main" 1607993689
-  "main.bcf" 1607993689 101287 20ca4ab73f64649c71abbbf05936d3c0 "pdflatex"
+["biber main"] 1607993687 "main.bcf" "main.bbl" "main" 1607996292
+  "main.bcf" 1607996292 101287 20ca4ab73f64649c71abbbf05936d3c0 "pdflatex"
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1607993689 "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex" "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf" "main" 1607993689
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.aux" 1607993689 2523 49a425359b903a75e68b42029669827b ""
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex" 1607993687 18150 b77bd58e0cdc5a2cc8a40a332b8561ea ""
+  "main.blg"
+["pdflatex"] 1607996291 "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex" "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf" "main" 1607996292
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.aux" 1607996292 2523 50ccd7290b36246ad8f91f85170c8c23 ""
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.tex" 1607996291 18000 ad51ea66abd527b9b27fb7ca6e0e715c ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/home/joseph/bin/texlive2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -92,15 +92,15 @@
   "/home/joseph/bin/texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1592893624 333931 678e72aa796af0e11c715deea1e4f8d3 ""
   "/home/joseph/bin/texlive2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1592893638 2226834 40537bcfe43e4370d23b88b303dd5f1f ""
   "/home/joseph/bin/texlive2020/texmf.cnf" 1592893623 614 6ac0f7114afdf26402b4fc286485d5f9 ""
-  "main.aux" 1607993689 2523 49a425359b903a75e68b42029669827b "pdflatex"
+  "main.aux" 1607996292 2523 50ccd7290b36246ad8f91f85170c8c23 "pdflatex"
   "main.bbl" 1607993688 466 f7f239c736cf01ac6ce7bd829f9b3c7b "biber main"
-  "main.run.xml" 1607993689 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
-  "main.tex" 1607993687 18150 b77bd58e0cdc5a2cc8a40a332b8561ea ""
+  "main.run.xml" 1607996292 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.tex" 1607996291 18000 ad51ea66abd527b9b27fb7ca6e0e715c ""
   (generated)
-  "main.run.xml"
   "main.pdf"
   "main.log"
   "main.bcf"
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf"
-  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.log"
   "main.aux"
+  "main.run.xml"
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.log"
+  "/home/joseph/OneDrive/research-files/WQU/3 Discrete-time stochastic processes/MScFE-620---Group-Project/submission-2/latex-code/main.pdf"
