@@ -50,9 +50,38 @@
 \section{Part A - Construction of Trinomial Tree}
 
 \hl{Pepar's code goes here.}
+This is the other extreme where $\beta$, $\rho$, $v$ are 0. 
 
+\begin{align}
+    \alpha+\gamma+\theta+\eta+\psi+\lambda & = 1 \label{eq:EMM-cond-1} \\
+    2\alpha+2\gamma + \eta - 2\psi - 2\lambda & = 1 \label{eq:EMM-cond-2}\\
+    6\alpha - 6\gamma + 4\theta -4\eta -10\psi + 10\lambda & = 1 \label{eq:EMM-cond-3}\\
+    \alpha & = 2\gamma \label{eq:EMM-cond-4}\\
+    \theta & = \frac{5}{3}\eta \label{eq:EMM-cond-5}\\
+    \psi & = \frac{4}{3}\lambda \label{eq:EMM-cond-6}
+\end{align}
 
+Substituting \ref{eq:EMM-cond-4}, \ref{eq:EMM-cond-5}, \ref{eq:EMM-cond-6} into \ref{eq:EMM-cond-1}, \ref{eq:EMM-cond-3} and \ref{eq:EMM-cond-2} gives (\hl{Pepar, please check})
+\begin{align*}
+    3\gamma + \frac{8}{3}\eta + \frac{7}{3}\lambda & = 1 \\
+    6\gamma + \frac{8}{3}\eta - \frac{14}{3}\lambda & = 1 \\
+    \implies -3\gamma + 7\lambda & = 0 \\
+    \implies \lambda & = \frac{3}{7}\gamma \\
+    \implies \psi & = \frac{4}{7}\gamma
+\end{align*}
+Then
+\begin{align*}
+    3\gamma+\frac{3}{8}\eta + \frac{3}{7}\gamma + \frac{4}{7}\gamma & = 1 \\
+    \frac{8}{3}\eta & = 1 - 4\gamma \\
+    \implies \eta & = \frac{3(1-4)}{8}\gamma \\
+    \implies \theta & = \frac{5-20\gamma}{8}
+\end{align*}
+The set of equivalent Martingale measures is therefore:
+\begin{align*}
+    \mathcal{P} & =\left\{ \left(2\gamma,0,\gamma,\frac{5-20\gamma}{8},0,\frac{3-12\gamma}{8},\frac{4}{7}\gamma,0,\frac{3}{7}\gamma\right): 0\ge\gamma\ge\frac{1}{4}\right\}
+\end{align*}
 
+\hl{I copied the condition for $\gamma$ from the notes but this is unphysical. Could you please double check this? }
 
 \section{Part B - Arbitrage-free conditions and market completness}
 For this section of the task, we will apply the arbitrage-free conditions to the numerical trinomial tree construction above and also to a completely general trinomial tree. In the later case, we will also derive conditions under which the market is complete. We begin by definining a market $((\Omega, \mathcal{F},\mathbb{F},\mathbb{P}),X)$ with $T=2$ and $d=1$. $X = (1,X_t)$ is comprised of one risk-free asset (normalised to 1) and one risky asset which we will denote as $X_t$. Since we are trying to describe the trinomial model, we know that the sample space will consist of the three possibilities for asset evolution at any given time, namely up $u$, down $d$ and nothing $n$. Assuming the completely general case where the asset price can move a different amount at each time step, we have $ud\neq du$ (commutativity property does not hold) and so $\Omega = \{uu,un,ud,nu,nn,nd,du,dn,dd\}$. For $\mathcal{F}$, we use the natural filtration which prevents look ahead bias. Specifically, $\mathbb{F} = \{\mathcal{F}_0, \mathcal{F}_1, \mathcal{F}_2\}$ where 
