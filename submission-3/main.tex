@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+
+\title{Submission 3}
+\author{peparhugo}
+\date{January 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Perpetual American Put Option Pricing}
+A perpetual American option is an option that has no expiry date. This means that the perpetual option will exist until it is exercised. From the perspective of binomial tree, it will be priced on an infinitely expanding tree as shown below.
+
+\tikzstyle{bag} = [text width=2em, text centered]
+\tikzstyle{end} = []
+\begin{tikzpicture}[sloped]
+   \node (a) at ( 0,0) [bag] {$S_{0}$};
+   \node (b) at ( 4,-1.5) [bag] {$uS_{0}$};
+   \node (c) at ( 4,1.5) [bag] {$dS_{0}$};
+   \node (d) at ( 8,-3) [bag] {$d^2S_{0} \medspace$...};
+   \node (e) at ( 8,0) [bag] {$S_{0} \medspace$...};
+   \node (f) at ( 8,3) [bag] {$u^2S_{0}\medspace$...};
+   \draw [->] (a) to node [below] {$(1-p)$} (b);
+   \draw [->] (a) to node [above] {$p$} (c);
+   \draw [->] (c) to node [below] {$p^2$} (f);
+   \draw [->] (c) to node [above] {$(1-p)p$} (e);
+   \draw [->] (b) to node [below] {$(1-p)p$} (e);
+   \draw [->] (b) to node [above] {$(1-p)^2$} (d);
+\end{tikzpicture}
+
+This type of option still has a strike price K, interest rate r, stock price at time t S$\textsubscript{t}$ and a variance of the stock price $\sigma\textsuperscript{2}$. It is important to note that the price V$\textsubscript{t}$ of a perpetual option no longer depends on time t since at any time t the remaining time of contract, providing it has not been exercised, is infinity\cite{amer_opts}. While it may seem impossible to price an infinitely expanding binomial tree, it is actually possible using a geometric Brownian Motion process where the price of the stock evolves continuously over time. Given that the price of a perpetual option does not depend on time, it depends on two key assumptions.
+
+\begin{enumerate}
+\item The risk-free interest rate r is constant over time.
+\item The price evolution of the stock does not change over time. This is to say the price evolution of S$\textsubscript{t}$ at time t is the same as the price evolution of S$\textsubscript{0}$ at time 0 \cite{amer_opts}. In other words, the evolution of the stock price S is independent of time or the price transformation Z$\textsubscript{t}$ is stationary. The stationary property of the geometric Brownian motion process means that the probability of of upward and downward motion of the stock price are risk-neutral\cite{bro_mot}. This is considered a "stochastic process with stationary and independent increments and sample paths which are both skip-free upwards and downwards (i.e., continuous) is the Wiener process"\cite{amer_opts}. The Wiener process is a continuous martingale as compared to the discrete martingales provided in previous sections of this paper\cite{bro_mot}.
+\end{enumerate}
+
+The stock price evolution takes the following form
+
+\begin{equation}
+    S\textsubscript{t+1}=S\textsubscript{t}Z\textsubscript{t}
+\end{equation}
+
+where Z\textsubscript{t} is the following geometric Brownian motion equation.
+
+\begin{equation}
+    S\textsubscript{t}=S\textsubscript{0} exp( \sigma W\textsubscript{t} + (r - \sigma\textsuperscript{2}/2)t)
+\end{equation}
+
+Without deriving the proof, the price of a perpetual American put uses the following equation.
+
+\begin{equation}
+    V_{t} = K \left[ \frac{K}{S_{t}} \left( 1 - \frac{2r}{ 2r+\sigma^2 } \right) \right] ^{2r/\sigma^2 } \label{eq:perp-option-price}
+\end{equation}
+
+Before pricing the perpetual American put option, lets summarize characteristics of equation \ref{eq:perp-option-price}.
+
+\begin{enumerate}
+\item As K increases, the price V\textsubscript{t} of the perpetual put option increases. This makes sense since the payout of the put is (K - S\textsubscript{t}) so as the strike price increases, so does the payout of exercising the put\cite{amer_opts}.
+\item As r increases, the price V\textsubscript{t} of the perpetual put option decreases. If r is 0, then the price V\textsubscript{t} of the put option is the strike price K. Since r represents the time value of money, it holds that as r increases then future value exercising the put decreases\cite{amer_opts}.
+\item As $\sigma^2$ increases, the price V\textsubscript{t} of the perpetual put option increases. The $\sigma^2$ is rather interesting within this equation because even though the price of the perpetual put is independent of time there is a link between time t, the stock price S\textsubscript{t} and $\sigma^2$. $\sigma^2$ represents the price evolution of stock price S\textsubscript{t} so the smaller $\sigma^2$, the lower likelihood that price of S\textsubscript{t} will experience large changes. This means if there is a significant gap between K and S\textsubscript{t}, on average more time is needed for S\textsubscript{t} to reach the optimal strike price where the holder of the contract would choose to exercise the contract\cite{amer_opts}. If more time is needed, then the future value of the perpetual put option payoffs are discounted more than a stock with higher volatility\cite{amer_opts}. So when it is said that the perpetual put option is independent of time, it is actually saying if S\textsubscript{t} = S\textsubscript{t+1} then the price of put option V\textsubscript{t} = V\textsubscript{t+1} for any value of t.
+\item As S\textsubscript{t} increases, the price V\textsubscript{t} of the perpetual put option decreases. This makes sense as well since the payout of the put is (K - S\textsubscript{t}) so if S\textsubscript{t} increases, the pay out of option decreases thus decreasing the price of put option itself.
+\end{enumerate}
+
+Now that the intuition of the pricing the perpetual American put option is described and summarized we can price the value of the contract from our previous example.
+
+\begin{align*}
+    Let \medspace r=10\% \\
+    K = 10 \\
+    S\textsubscript{t} = 10 \\
+    \sigma^2 = 15\% \\
+    V_{t} = 10 \left[ \frac{10}{10} \left( 1 - \frac{2(0.1)}{ 2(0.1)+0.15 } \right) \right] ^{2(0.1)/0.15 } \\
+    \implies V_{t} = 3.23
+\end{align*}
+
+This shows that the value of V\textsubscript{t} at time t is 3.23 given a $\sigma^2$ value of 0.15 and S\textsubscript{t} value of 10. To illustrate how the price V\textsubscript{t} of the put changes with $\sigma^2$ changing we will also calculate the value of the put with $\sigma^2$ = 0.30.
+
+\begin{align*}
+    Let \medspace r=10\% \\
+    K = 10 \\
+    S\textsubscript{t} = 10 \\
+    \sigma^2 = 30\% \\
+    V_{t} = 10 \left[ \frac{10}{10} \left( 1 - \frac{2(0.1)}{ 2(0.1)+0.3 } \right) \right] ^{2(0.1)/0.3 } \\
+    \implies V_{t} = 7.11
+\end{align*}
+
+It is important to note that the percentage change in V\textsubscript{t} is 120\% compared to the 100\% in $\sigma^2$ that price V\textsubscript{t} of the put changes faster than changes in $\sigma^2$.
+
+The perpetual American put option pricing using the binomial tree model moves us from discrete-time stochastic process pricing for options into continuous given t now extends to infinity. This now pushes us to using continuous-stochastic processes for derivative pricing. In this scenario we treated time as continuous since the contract expiry went to infinity but the movement of the stock price up and down was still considered to be discrete. The other scenario we did not consider was finite time with infinitely many movements up and down before the contract expiry. This means we can also consider options with expiry dates as continuous where movements up and down are now continuous but this is outside the scope of this paper.
+
+
+\begin{thebibliography}{9}
+
+\bibitem{amer_opts}
+Lalley, Steve
+“Lecture 15: American Options”
+The University of Chicago \\
+\texttt{http://www.stat.uchicago.edu/~lalley/Courses/391/Lecture15.pdf}.
+Accessed 9 Jan. 2021.
+
+\bibitem{bro_mot}
+Lalley, Steve
+“Lecture 6: Brownian Motion”
+The University of Chicago \\
+\texttt{http://galton.uchicago.edu/~lalley/Courses/390/Lecture5.pdf}.
+Accessed 9 Jan. 2021.
+
+\end{thebibliography}
+
+\end{document}
